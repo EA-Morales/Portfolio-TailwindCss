@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "buildcss": "tailwind build styles.css -o public/style.css",
-    "prod": "NODE_ENV=production postcss styles.css -o public/style.css"
+    "buildcss": "npx tailwindcss -i styles.css -o public/style.css",
+    "prod": "NODE_ENV=production npx tailwindcss -i styles.css -o public/style.css"
   },
   "repository": {
     "type": "git",
