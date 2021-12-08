@@ -7,150 +7,514 @@
   <link rel="stylesheet" href="style.css">
   <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
   <title>Portfolio Argentina Programa</title>
   <!-- ... -->
 </head>
 
 <body>
-
+  <!-- ?Body -->
   <div class="bg-base-300 h-full overflow-hidden">
-    <!-- !Body -->
+    <!-- ?Body -->
 
-    <!-- !Card top -->
+    <!-- 
+
+        -----------------------------   CARD TOP   ----------------------------------
+
+   -->
+
+    <!-- ?About -->
+
+    <!-- ?Card top -->
     <div class="bg-base-100 w-11/12 justify-center items-center overflow-hidden rounded-lg shadow-lg mx-auto">
-      <!-- !Card top -->
+      <!-- ?Card top -->
 
-      <!-- !Banner -->
+      <!-- ?Banner -->
       <div class="relative h-40">
         <img class="absolute h-full w-full object-cover" src="./images/banner.jpg" />
       </div>
-      <!-- !Banner -->
+      <!-- ?Banner -->
 
-      <!-- !Avatar -->
+      <!-- ?Avatar -->
       <div class="relative shadow mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4">
         <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=80" />
       </div>
-      <!-- !Avatar -->
+      <!-- ?Avatar -->
 
-      <div class="mt-14 flex justify-center flex-wrap sm:justify-between sm:mx-6">
-        <!-- !Div contenedor Personal Information -->
+      <!-- ?Div contenedor Personal Information -->
+      <div class="mt-14 flex flex-col sm:flex-row justify-center flex-wrap sm:justify-between sm:mx-6">
+        <!-- ?Div contenedor Personal Information -->
 
-        <!-- !Personal Information -->
-        <div class="">
-          <h1 class="text-lg text-center font-semibold mt-1 text-primary sm:text-left">Eduardo Agustin Morales</h1>
-          <p class="text-sm text-neutral-content text-center mt-1 sm:text-left">Informatico en CASA</p>
-          <p class="text-sm text-neutral-content text-center mt-1 sm:text-left">Buenos Aires (Argentina) <a href="#" class="underline">Informacion de contacto</a></p>
+        <!-- ?Personal Information -->
+        <div class="text-center sm:text-left">
+          <h1 id="nombre" type="text" class="nombre text-lg text-center font-semibold mt-1 text-primary sm:text-left">Eduardo Agustin Morales</h1>
+          <p id="profesion" class="text-sm text-neutral-content text-center mt-1 sm:text-left">FrontEnd Developer</p>
+          <p id="ubicacion" class="text-sm text-neutral-content text-center mt-1 sm:text-left">Buenos Aires (Argentina)</p>
+          <a href="#" class="underline text-sm text-neutral-content text-center mt-1">Informacion de contacto</a>
         </div>
-        <!-- !Personal Information -->
+        <!-- ?Personal Information -->
 
+        <!-- ?Container Social -->
         <div class="flex flex-col place-items-center text-center p-2">
-          <!-- !SVG and Link container -->
+          <!-- ?Container Social -->
+
+          <!-- ?SVG and Link container -->
           <div class="flex place-items-center space-x-2 my-3">
+            <!-- ?SVG and Link container -->
+
+            <!-- ?SVG ICON -->
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
               <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
             </svg>
-            <!-- <img class="float-left block h-full" src="https://pbs.twimg.com/profile_images/1417883946524811270/Uq1vEY68_400x400.jpg" /> -->
-            <p class="badge link link-hover">Linkedin</p>
-          </div>
-          <!-- !SVG and Link container -->
+            <!-- ?SVG ICON -->
 
-          <!-- !SVG and Link container -->
+            <p class="badge link link-hover">Linkedin</p>
+
+            <!-- ?SVG and Link container -->
+          </div>
+          <!-- ?SVG and Link container -->
+
+          <!-- ?SVG and Link container -->
           <div class="flex place-items-center space-x-2">
+            <!-- ?SVG and Link container -->
+
+            <!-- ?SVG ICON -->
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
               <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
             </svg>
-            <!-- <img class="float-left h-full" src="https://upload.wikimedia.org/wikipedia/commons/1/14/Logo_de_la_Universidad_de_Buenos_Aires.jpg" /> -->
+            <!-- ?SVG ICON -->
+
             <p class="badge link link-hover">Github</p>
+
+            <!-- ?SVG and Link container -->
           </div>
-          <!-- !SVG and Link container -->
+          <!-- ?SVG and Link container -->
         </div>
       </div>
 
-      <!-- !Buttons -->
+      <!-- ?Buttons Container -->
       <div class="mt-1 p-4 flex flex-col content-center flex-wrap mx-6 center gap-3 border-t border-base-content sm:flex-row sm:px-0 sm:mt-3">
-        <button class="btn btn-primary btn-xs">Intereses</button>
-        <button class="btn btn-primary btn-xs">anadir seccion</button>
-        <button class="btn btn-primary btn-xs">Mas</button>
+        <!-- ?Buttons Container -->
+
+        <!-- ?MODAL -->
+        <label for="datos" class="btn btn-primary btn-xs modal-button">datos</label>
+        <input type="checkbox" id="datos" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <!-- ?Input -->
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Nombre y Apellido</span>
+              </label>
+              <input type="text" id="newname" placeholder="Nombre y Apellido" class="input input-sm input-bordered" />
+            </div>
+            <!-- ?Input -->
+            <!-- ?Input -->
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Profesion</span>
+              </label>
+              <input type="text" id="newprofesion" placeholder="Profesion" class="input input-sm input-bordered" />
+            </div>
+            <!-- ?Input -->
+            <!-- ?Input -->
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Ubicacion</span>
+              </label>
+              <input type="text" id="newubicacion" placeholder="Ubicacion" class="input input-sm input-bordered" />
+            </div>
+            <!-- ?Input -->
+
+            <div class="modal-action">
+              <label for="datos" onclick="fu()" class="btn btn-primary">Accept</label>
+              <label for="datos" class="btn">Close</label>
+            </div>
+          </div>
+          <!-- ?MODAL -->
+        </div>
+        <button class="btn btn-primary btn-xs">Foto</button>
       </div>
       <!-- !Buttons -->
-      !
     </div>
+    <!-- ?Card top -->
 
-    <!-- !About -->
+    <!-- 
+
+        ----------------------------------    ABOUT  ----------------------------------------------
+
+   -->
+
+    <!-- ?About -->
 
     <div class="bg-base-100 mt-4 px-6 py-4 w-11/12 justify-center items-center overflow-hidden rounded-lg shadow-lg mx-auto">
-      <h2 class="text-lg tracking-widest text-center text-primary font-extrabold mb-1 sm:text-left">About</h2>
-      <p class="text-sm text-center text-neutral-content sm:text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora officia omnis modi deserunt provident vero temporibus dolor doloribus eum sunt, voluptates iste eaque saepe ab minus, sit quos mollitia repellat.</p>
+      <!-- ?DROPDOWN ABOUT ME -->
+      <div class="relative">
+        <div class="dropdown dropdown-end absolute -right-5 top-0">
+          <div tabindex="0" class="m-1 btn btn-xs">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-auto">
+            <li>
+              <label for="aboutme" class="btn btn-xs btn-secondary modal-button">Editar</label>
+            </li>
+          </ul>
+        </div>
+        <!-- ?DROPDOWN ABOUT ME -->
+
+        <!-- MODAL ABOUT ME -->
+        <input type="checkbox" id="aboutme" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Your bio</span>
+              </label>
+              <textarea class="textarea h-24 textarea-bordered" placeholder="Bio"></textarea>
+            </div>
+            <div class="modal-action">
+              <label for="aboutme" class="btn btn-primary">Accept</label>
+              <label for="aboutme" class="btn">Close</label>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL ABOUT ME -->
+
+        <!-- ?TITLE ABOUT ME -->
+        <h2 class="text-lg tracking-widest text-center text-primary font-extrabold mb-1 sm:text-left">About Me</h2>
+        <!-- ?TITLE ABOUT ME -->
+        <!-- ?PARRAFO ABOUT ME -->
+        <p class="text-sm text-center text-neutral-content sm:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nulla officia voluptate, nisi repellat cumque obcaecati. Facilis temporibus nobis voluptatibus cum voluptatem fugiat harum iste ut a pariatur! Iste, adipisci! Incidunt sint qui animi praesentium suscipit ducimus quae quam veritatis illo? Vitae magnam vero ad autem amet ab molestiae maiores omnis, earum temporibus nostrum dolores distinctio consequatur, sunt expedita eos.</p>
+        <!-- ?PARRAFO ABOUT ME -->
+      </div>
     </div>
 
-    <!-- !about -->
+    <!-- ?about -->
 
-    <!-- !Experience -->
+    <!-- 
 
-    <div class="mx-auto bg-base-100 m-5 w-11/12 overflow-hidden rounded-lg shadow-lg">
-      <!-- !Container Card -->
+        -------------------------    EXPERIENCIA Y EDUCACION   -------------------------------------------
 
-      <!-- !Title card -->
-      <h2 class="text-lg tracking-widest text-center font-extrabold text-primary ml-6 mt-4 sm:text-left">Experience</h2>
-      <!-- !Title card -->
+  -->
 
-      <!-- !Card -->
-      <div class="p-6 mb-5">
-        <img class="float-left h-24 w-24 mr-3" src="" />
-        <h3 class="text-sm font-semibold text-secondary mb-3">Backend Developer</h3>
-        <h4 class="text-xs text-neutral-content mb-3">Pixar - Jornada Parcial</h4>
-        <h5 class="text-xs text-neutral-content">2019 - Actualidad</h5>
+    <!-- !CONTAINER CARD EXPERIENCIA Y EDUCACION -->
+    <div class="bg-base-100 mt-4 mb-3 px-6 py-4 w-11/12 justify-center items-center overflow-hidden rounded-lg shadow-lg mx-auto">
+      <!-- ?DROPDOWN ANADIR EXPERIENCIA -->
+      <div class="relative">
+        <div class="dropdown dropdown-end absolute -right-5 top-0">
+          <div tabindex="0" class="m-1 btn btn-xs">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-auto">
+            <li>
+              <label for="anadir-experiencia" class="btn btn-xs btn-secondary modal-button">anadir</label>
+            </li>
+          </ul>
+        </div>
+        <!-- ?DROPDOWN ANADIR EXPERIENCIA -->
+
+        <!-- MODAL ANADIR EXPERIENCIA -->
+        <input type="checkbox" id="anadir-experiencia" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <p>MODAL DE ANADIR EXPERIENCIA</p>
+            <div class="modal-action">
+              <label for="anadir-experiencia" class="btn btn-primary">Accept</label>
+              <label for="anadir-experiencia" class="btn">Close</label>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL ANADIR EXPERIENCIA -->
+
+        <!-- ?TITLE EXPIRIENCE -->
+        <h2 class="text-lg tracking-widest text-center text-primary font-extrabold mb-1 sm:text-left">Experiencia</h2>
+        <!-- ?TITLE EXPIRIENCE -->
       </div>
-      <!-- !Card -->
+      <!-- ?DROPDOWN ANADIR EXPERIENCIA -->
 
-      <h2 class="text-lg tracking-widest text-center font-extrabold text-primary ml-6 sm:text-left">Education</h2>
-      <!-- !Container Card -->
+      <!-- !CARD EXPERIENCIA -->
+      <div class="flex flex-col place-items-center | py-4 | relative | sm:flex-row">
+        <!-- ?DROPDOWN CARD -->
+        <div class="dropdown dropdown-end absolute top-2 right-0">
+          <div tabindex="0" class="m-1 btn btn-xs">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+              <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="p-2 gap-2 shadow menu dropdown-content bg-base-100 rounded-box w-auto">
+            <li>
+              <label for="editarcard" class="btn btn-xs btn-secondary modal-button">Editar</label>
+            </li>
+            <li>
+              <buttn class="btn btn-xs btn-secondary modal-button">Eliminar</buttn>
+            </li>
+          </ul>
+        </div>
+        <!-- ?DROPDOWN CARD -->
 
-      <!-- !Card -->
-      <div class="p-6 mb-5">
-        <img class="float-left h-24 w-24 mr-3" src="" />
-        <h3 class="text-sm font-semibold text-secondary mb-3">Backend Developer</h3>
-        <h4 class="text-xs text-neutral-content mb-3">Pixar - Jornada Parcial</h4>
-        <h5 class="text-xs text-neutral-content">2019 - Actualidad</h5>
+        <!-- MODAL EDITAR CARD -->
+        <input type="checkbox" id="editarcard" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Link Imagen</span>
+              </label>
+              <input type="text" placeholder="Link Imagen" class="input input-sm input-bordered" />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Puesto</span>
+              </label>
+              <input type="text" placeholder="Puesto" class="input input-sm input-bordered" />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Empresa</span>
+              </label>
+              <input type="text" placeholder="Empresa" class="input input-sm input-bordered" />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Periodo</span>
+              </label>
+              <input type="text" placeholder="Periodo" class="input input-sm input-bordered" />
+            </div>
+            <div class="modal-action">
+              <label for="editarcard" class="btn btn-primary">Accept</label>
+              <label for="editarcard" class="btn">Close</label>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL EDITAR CARD -->
+        <img class="h-12 w-12 mb-3 | sm:float-left sm:h-24 sm:w-24 sm:mr-6 sm:mb-0" src="" />
+        <div class="">
+          <h3 class="text-sm font-semibold text-secondary mb-3 | sm:text-left sm:text-xl">FrontEnd Developer</h3>
+          <h4 class="text-xs text-neutral-content mb-3 text-center | sm:text-left sm:text-base">Airbnb - Jornada Parcial</h4>
+          <h5 class="text-xs text-neutral-content text-center | sm:text-left sm:text-base">2019 - Actualidad</h5>
+        </div>
       </div>
-      <!-- !Card -->
+      <!-- !CARD EXPERIENCIA -->
+      <!-- 
 
-      <!-- !Card -->
-      <div class="p-6 mb-5">
-        <img class="float-left h-24 w-24 mr-3" src="" />
-        <h3 class="text-sm font-semibold text-secondary mb-3">Backend Developer</h3>
-        <h4 class="text-xs text-neutral-content mb-3">Pixar - Jornada Parcial</h4>
-        <h5 class="text-xs text-neutral-content">2019 - Actualidad</h5>
-      </div>
-      <!-- !Card -->
+        ------------------------------------------------------------------------------------------------------
 
-      <!-- !Card -->
-      <div class="p-6 mb-5">
-        <img class="float-left h-24 w-24 mr-3" src="" />
-        <h3 class="text-sm font-semibold text-secondary mb-3">Backend Developer</h3>
-        <h4 class="text-xs text-neutral-content mb-3">Pixar - Jornada Parcial</h4>
-        <h5 class="text-xs text-neutral-content">2019 - Actualidad</h5>
+     -->
+      <!-- ?TITULO ANADIR EDUCACION -->
+      <div class="relative border-t-2 mt-3 border-neutral-content">
+        <div class="dropdown dropdown-end absolute -right-5 top-3">
+          <div tabindex="0" class="m-1 btn btn-xs">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-auto">
+            <li>
+              <label for="anadir-educacion" class="btn btn-xs btn-secondary modal-button">anadir</label>
+            </li>
+          </ul>
+        </div>
+        <!-- ?DROPDOWN ANADIR EDUCACION -->
+
+        <!-- MODAL ANADIR EDUCACION -->
+        <input type="checkbox" id="anadir-educacion" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <p>MODAL DE ANADIR EDUCACION</p>
+            <div class="modal-action">
+              <label for="anadir-educacion" class="btn btn-primary">Accept</label>
+              <label for="anadir-educacion" class="btn">Close</label>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL ANADIR EDUCACION -->
+
+        <!-- ?TITLE EDUCACION -->
+        <h2 class="text-lg tracking-widest text-center text-primary font-extrabold mb-1 mt-3 sm:text-left">Educacion</h2>
+        <!-- ?TITLE EDUCACION -->
       </div>
-      <!-- !Card -->
+      <!-- ?TITULO ANADIR EDUCACION -->
+      <!-- !CARD EDUCACION -->
+      <div class="flex flex-col place-items-center | py-4 | relative | sm:flex-row">
+        <!-- ?DROPDOWN CARD -->
+        <div class="dropdown dropdown-end absolute top-2 right-0">
+          <div tabindex="0" class="m-1 btn btn-xs">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+              <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="p-2 gap-2 shadow menu dropdown-content bg-base-100 rounded-box w-auto">
+            <li>
+              <label for="educacion1" class="btn btn-xs btn-secondary modal-button">Editar</label>
+            </li>
+            <li>
+              <button class="btn btn-xs btn-secondary modal-button">Eliminar</button>
+            </li>
+          </ul>
+        </div>
+        <!-- ?DROPDOWN CARD -->
+
+        <!-- MODAL EDITAR CARD -->
+        <input type="checkbox" id="educacion1" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Link Imagen</span>
+              </label>
+              <input type="text" placeholder="Link Imagen" class="input input-sm input-bordered" />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Institucion</span>
+              </label>
+              <input type="text" placeholder="Institucion" class="input input-sm input-bordered" />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Carrera</span>
+              </label>
+              <input type="text" placeholder="Carrera" class="input input-sm input-bordered" />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Periodo</span>
+              </label>
+              <input type="text" placeholder="Periodo" class="input input-sm input-bordered" />
+            </div>
+            <div class="modal-action">
+              <label for="educacion1" class="btn btn-primary">Accept</label>
+              <label for="educacion1" class="btn">Close</label>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL EDITAR CARD -->
+        <img class="h-12 w-12 mb-3 | sm:float-left sm:h-24 sm:w-24 sm:mr-6 sm:mb-0" src="" />
+        <div class="">
+          <h3 class="text-sm font-semibold text-secondary mb-3 | sm:text-left sm:text-xl">FrontEnd Developer</h3>
+          <h4 class="text-xs text-neutral-content mb-3 text-center | sm:text-left sm:text-base">Argentina Programa - INTI</h4>
+          <h5 class="text-xs text-neutral-content text-center | sm:text-left sm:text-base">2021</h5>
+        </div>
+      </div>
+      <!-- !CARD EDUCACION -->
+      <!-- !CARD EDUCACION -->
+      <div class="flex flex-col place-items-center | py-4 | relative | sm:flex-row">
+        <!-- ?DROPDOWN CARD -->
+        <div class="dropdown dropdown-end absolute top-2 right-0">
+          <div tabindex="0" class="m-1 btn btn-xs">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+              <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="p-2 gap-2 shadow menu dropdown-content bg-base-100 rounded-box w-auto">
+            <li>
+              <label for="educacion2" class="btn btn-xs btn-secondary modal-button">Editar</label>
+            </li>
+            <li>
+              <button class="btn btn-xs btn-secondary modal-button">Eliminar</button>
+            </li>
+          </ul>
+        </div>
+        <!-- ?DROPDOWN CARD -->
+
+        <!-- MODAL EDITAR CARD -->
+        <input type="checkbox" id="educacion2" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Link Imagen</span>
+              </label>
+              <input type="text" placeholder="Link Imagen" class="input input-sm input-bordered" />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Institucion</span>
+              </label>
+              <input type="text" placeholder="Institucion" class="input input-sm input-bordered" />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Carrera</span>
+              </label>
+              <input type="text" placeholder="Carrera" class="input input-sm input-bordered" />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Periodo</span>
+              </label>
+              <input type="text" placeholder="Periodo" class="input input-sm input-bordered" />
+            </div>
+            <div class="modal-action">
+              <label for="educacion2" class="btn btn-primary">Accept</label>
+              <label for="educacion2" class="btn">Close</label>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL EDITAR CARD -->
+        <img class="h-12 w-12 mb-3 | sm:float-left sm:h-24 sm:w-24 sm:mr-6 sm:mb-0" src="" />
+        <div class="">
+          <h3 class="text-sm font-semibold text-secondary mb-3 | sm:text-left sm:text-xl">BackEnd Developer</h3>
+          <h4 class="text-xs text-neutral-content mb-3 text-center | sm:text-left sm:text-base">Argentina Programa - INTI</h4>
+          <h5 class="text-xs text-neutral-content text-center | sm:text-left sm:text-base">2021</h5>
+        </div>
+      </div>
+      <!-- !CARD EDUCACION -->
     </div>
+    <!-- !CONTAINER CARD EXPERIENCIA Y EDUCACION -->
 
-    <!-- !Experience -->
+    <!-- 
 
-    <!-- !Knowlege -->
+        -------------------------    LENGUAJES   -------------------------------------------
+
+   -->
+
+    <!-- ?LENGUAJES -->
 
     <div class="bg-base-100 p-6 w-11/12 overflow-hidden rounded-lg shadow-lg mx-auto">
-      <!-- !Container Card -->
+      <!-- ?DROPDOWN LENGUAJES -->
+      <div class="relative">
+        <div class="dropdown dropdown-end absolute -right-5 top-0">
+          <div tabindex="0" class="m-1 btn btn-xs">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-auto">
+            <li>
+              <label for="lenguajes" class="btn btn-xs btn-secondary modal-button">anadir</label>
+            </li>
+          </ul>
+        </div>
+        <!-- ?DROPDOWN LENGUAJES -->
 
-      <!-- !Title Card -->
-      <h2 class="text-base text-center tracking-widest font-extrabold text-primary mb-4 sm:text-left">Hard skills & Soft skills</h2>
-      <!-- !Title Card -->
+        <!-- MODAL LENGUAJES -->
+        <input type="checkbox" id="lenguajes" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <p>MODAL ANADIR LENGUAJES</p>
+            <div class="modal-action">
+              <label for="lenguajes" class="btn btn-primary">Accept</label>
+              <label for="lenguajes" class="btn">Close</label>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL LENGUAJES -->
 
-      <!-- !Container Bars -->
+        <!-- ?TITLE LENGUAJES -->
+        <h2 class="text-lg tracking-widest text-center text-primary font-extrabold mb-4 sm:text-left">Lenguajes</h2>
+        <!-- ?TITLE LENGUAJES -->
+      </div>
+
+      <!-- !Container Badges -->
       <div class="">
         <!-- !component -->
         <div class="flex flex-col justify-center">
           <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 px-4">
-
             <!-- !SMALL CARD ROUNDED -->
             <div class="bg-base-200 shadow-2xl | p-4 rounded-3xl | flex justify-around">
               <img class="w-16 h-16 object-cover rounded-full" src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png" alt="" />
@@ -180,39 +544,163 @@
 
             <!-- !SMALL CARD ROUNDED -->
             <div class="bg-base-200 shadow-2xl | p-4 rounded-3xl | flex justify-around">
-              <img class="w-16 h-16 object-cover rounded-full" src="http://assets.stickpng.com/images/5847f981cef1014c0b5e48be.png" alt="" />
+              <img class="w-16 h-16 object-cover rounded-full" src="https://img1.freepng.es/20180824/gwx/kisspng-computer-icons-pro-git-portable-network-graphics-i-git-book-pro-git-app-app-5b80546bc0a4c5.2332101615351368757891.jpg" alt="" />
               <div class="flex flex-col justify-center">
                 <p class="text-neutral-content font-semibold">Git</p>
               </div>
             </div>
             <!-- !END SMALL CARD ROUNDED -->
-
           </div>
         </div>
       </div>
-      <!-- !Container Bars -->
+      <!-- !Container Badges -->
     </div>
 
-    <!-- !Knowlege -->
+    <!-- ?LENGUAJES -->
 
-    <!-- !Proyects -->
+    <!-- 
+
+        -------------------------    PROYECTOS   -------------------------------------------
+
+   -->
+
+    <!-- !PROYECTOS -->
 
     <div class="bg-base-100 m-5 p-5 w-11/12 justify-center items-center overflow-hidden rounded-lg shadow-lg mx-auto">
-      <div class="mb-4">
-        <h2 class="text-lg text-center tracking-widest font-extrabold text-primary mb-2">Proyects</h2>
-        <h3 class="text-base tracking-widest text-secondary text-left font-semibold ml-6">e-farmacia</h3>
-        <p class="ml-6 text-sm text-neutral-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi aspernatur autem commodi minima provident.</p>
-      </div>
+      <!-- ?DROPDOWN PROYECTOS -->
+      <div class="relative">
+        <div class="dropdown dropdown-end absolute -right-5 top-0">
+          <div tabindex="0" class="m-1 btn btn-xs">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-auto">
+            <li>
+              <label for="proyectos" class="btn btn-xs btn-secondary modal-button">anadir</label>
+            </li>
+          </ul>
+        </div>
+        <!-- ?DROPDOWN PROYECTOS -->
 
-      <div class="">
-        <h3 class="text-base tracking-widest text-secondary text-left font-semibold ml-6">Sistema de monitoreo</h3>
-        <p class="ml-6 text-sm text-neutral-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita suscipit consequuntur nobis aut fugit quas, ullam quis nostrum tempore.</p>
+        <!-- MODAL PROYECTOS -->
+        <input type="checkbox" id="proyectos" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <p>MODAL ANADIR PROYECTOS</p>
+            <div class="modal-action">
+              <label for="proyectos" class="btn btn-primary">Accept</label>
+              <label for="proyectos" class="btn">Close</label>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL PROYECTOS -->
+
+        <!-- ?TITLE PROYECTOS -->
+        <h2 class="text-lg tracking-widest text-center text-primary font-extrabold mb-4 sm:text-left">Proyectos</h2>
+        <!-- ?TITLE PROYECTOS -->
+
+        <!-- CARD PROYECTO 1 -->
+        <div class="relative mb-4">
+          <div class="dropdown dropdown-end absolute -right-1 top-0">
+            <div tabindex="0" class="m-1 btn btn-xs">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-auto gap-2">
+              <li>
+                <label for="proyecto1" class="btn btn-xs btn-secondary modal-button">Editar</label>
+              </li>
+              <li>
+                <button class="btn btn-xs btn-secondary modal-button">Eliminar</button>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+          <!-- MODAL PROYECTO1 -->
+          <input type="checkbox" id="proyecto1" class="modal-toggle" />
+          <div class="modal">
+            <div class="modal-box">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Proyecto</span>
+                </label>
+                <input type="text" placeholder="Proyecto" class="input input-sm input-bordered" />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Descripcion proyecto</span>
+                </label>
+                <textarea class="textarea h-24 textarea-bordered" placeholder="Descripcion proyecto"></textarea>
+              </div>
+
+              <div class="modal-action">
+                <label for="proyecto1" class="btn btn-primary">Accept</label>
+                <label for="proyecto1" class="btn">Close</label>
+              </div>
+            </div>
+          </div>
+          <!-- MODAL PROYECTO1 -->
+          <h3 class="text-base tracking-widest text-secondary text-left font-semibold ml-6 | sm:text-2xl">e-Farmacia</h3>
+          <p class="ml-6 text-sm text-neutral-content | sm:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates neque dolores a consequatur consequuntur doloremque debitis iure quis, in cumque nisi, accusantium iste, deserunt autem dicta vel quod magni.</p>
+        </div>
+        <!-- CARD PROYECTO 1 -->
+
+        <!-- CARD PROYECTO 2 -->
+        <div class="relative mb-4">
+          <div class="dropdown dropdown-end absolute -right-1 top-0">
+            <div tabindex="0" class="m-1 btn btn-xs">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-auto gap-2">
+              <li>
+                <label for="proyecto2" class="btn btn-xs btn-secondary modal-button">Editar</label>
+              </li>
+              <li>
+                <button class="btn btn-xs btn-secondary modal-button">Eliminar</button>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+          <!-- MODAL PROYECTO2 -->
+          <input type="checkbox" id="proyecto2" class="modal-toggle" />
+          <div class="modal">
+            <div class="modal-box">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Proyecto2</span>
+                </label>
+                <input type="text" placeholder="Proyecto2" class="input input-sm input-bordered" />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Descripcion proyecto2</span>
+                </label>
+                <textarea class="textarea h-24 textarea-bordered" placeholder="Descripcion proyecto2"></textarea>
+              </div>
+
+              <div class="modal-action">
+                <label for="proyecto2" class="btn btn-primary">Accept</label>
+                <label for="proyecto2" class="btn">Close</label>
+              </div>
+            </div>
+          </div>
+          <!-- MODAL PROYECTO2 -->
+          <h3 class="text-base tracking-widest text-secondary text-left font-semibold ml-6 | sm:text-2xl">Portfolio Personal</h3>
+          <p class="ml-6 text-sm text-neutral-content | sm:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolor, placeat deserunt dignissimos quasi velit repellendus facere ea, impedit ex quam nobis ducimus delectus aliquam quos corrupti rerum quia recusandae!Cum id cupiditate facilis esse perspiciatis magnam qui nostrum eius accusamus consequatur natus ea saepe porro, ipsa corrupti consequuntur earum modi voluptatem vero unde recusandae hic. Culpa, iusto. Illum, veniam?</p>
+        </div>
+        <!-- CARD PROYECTO 2 -->
+
+        <!-- !Proyects -->
       </div>
     </div>
-
-    <!-- !Proyects -->
-
   </div>
+
+
+  <script src="./app.js"></script>
 
 </body>
 
