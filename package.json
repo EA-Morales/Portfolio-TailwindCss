@@ -1,0 +1,32 @@
+{
+  "name": "PortfolioArgentinaPrograma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buildcss": "npx tailwindcss -i styles.css -o public/style.css",
+    "deploy": "npx gh-pages -d .",
+    "prod": "NODE_ENV=production npx tailwindcss -i styles.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EA-Morales/Portfolio-TailwindCss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EA-Morales/Portfolio-TailwindCss/issues"
+  },
+  "homepage": "https://github.com/EA-Morales/Portfolio-TailwindCss#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2",
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "daisyui": "^1.16.2",
+    "gh-pages": "^3.2.3"
+  }
+}

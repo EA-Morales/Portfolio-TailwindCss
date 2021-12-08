@@ -1,0 +1,27 @@
+https://images.unsplash.com/photo-1448932133140-b4045783ed9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80
+
+https://pbs.twimg.com/profile_images/1417883946524811270/Uq1vEY68_400x400.jpg
+
+<div class="relative h-40">
+  <img class="absolute h-full w-full object-cover" src="./images/banner.jpg" />
+</div>
+<div class="relative shadow mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4">
+  <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=80" />
+</div>
+<div class="mt-14 flex justify-center sm:place-content-between flex-wrap bg-red-300">
+  <div class="ml-6">
+    <h1 class="text-lg text-center sm:text-left font-semibold mt-1">Elon Musk</h1>
+    <p class="text-sm text-gray-600 text-center sm:text-left mt-1">Informatico en CONICET</p>
+    <p class="text-sm text-gray-600 text-center sm:text-left mt-1">Buenos Aires (Argentina) <a href="#" class="underline">Informacion de contacto</a></p>
+  </div>
+  <div class="text-center sm:text-left ml-6 sm:mr-5 mt-5 sm:mt-0 bg-gray-100">
+    <div class="block h-10 leading-9 mb-1">
+      <img class="float-left block h-full" src="https://pbs.twimg.com/profile_images/1417883946524811270/Uq1vEY68_400x400.jpg" />
+      <p class="ml-14">CONICET</p>
+    </div>
+    <div class="inline-block pr-5 h-10 leading-9 w-full">
+      <img class="float-left h-full" src="https://upload.wikimedia.org/wikipedia/commons/1/14/Logo_de_la_Universidad_de_Buenos_Aires.jpg" />
+      <p class="ml-14">Universidad de Buenos Aires</p>
+    </div>
+  </div>
+</div>
