@@ -17,33 +17,25 @@
   <div class="bg-base-300 h-full overflow-hidden">
     <!-- ?Body -->
 
-    <!-- 
+    <!--**         ------------------   CARD TOP   -----------------------------    **-->
 
-        -----------------------------   CARD TOP   ----------------------------------
-
-   -->
-
-    <!-- ?About -->
-
-    <!-- ?Card top -->
+    <!-- ?Card container -->
     <div class="bg-base-100 w-11/12 justify-center items-center overflow-hidden rounded-lg shadow-lg mx-auto">
-      <!-- ?Card top -->
 
-      <!-- ?Banner -->
+      <!-- ?Banner image -->
       <div class="relative h-40">
         <img class="absolute h-full w-full object-cover" src="./images/banner.jpg" />
       </div>
-      <!-- ?Banner -->
+      <!-- ?Banner image -->
 
-      <!-- ?Avatar -->
+      <!-- ?Avatar person-->
       <div class="relative shadow mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4">
-        <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=80" />
+        <img class="object-cover w-full h-full" src="http://placeimg.com/100/100/people" />
       </div>
-      <!-- ?Avatar -->
+      <!-- ?Avatar person-->
 
-      <!-- ?Div contenedor Personal Information -->
+      <!-- ?Container Personal Data -->
       <div class="mt-14 flex flex-col sm:flex-row justify-center flex-wrap sm:justify-between sm:mx-6">
-        <!-- ?Div contenedor Personal Information -->
 
         <!-- ?Personal Information -->
         <div class="text-center sm:text-left">
@@ -54,13 +46,11 @@
         </div>
         <!-- ?Personal Information -->
 
-        <!-- ?Container Social -->
+        <!-- ?Container Social Networks-->
         <div class="flex flex-col place-items-center text-center p-2">
-          <!-- ?Container Social -->
 
-          <!-- ?SVG and Link container -->
+          <!-- ?SVG icon and Link container -->
           <div class="flex place-items-center space-x-2 my-3">
-            <!-- ?SVG and Link container -->
 
             <!-- ?SVG ICON -->
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -68,15 +58,15 @@
             </svg>
             <!-- ?SVG ICON -->
 
+            <!-- ? Social Network -->
             <p class="badge link link-hover">Linkedin</p>
+            <!-- ? Social Network -->
 
-            <!-- ?SVG and Link container -->
           </div>
           <!-- ?SVG and Link container -->
 
           <!-- ?SVG and Link container -->
           <div class="flex place-items-center space-x-2">
-            <!-- ?SVG and Link container -->
 
             <!-- ?SVG ICON -->
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -84,70 +74,77 @@
             </svg>
             <!-- ?SVG ICON -->
 
+            <!-- ? Social Network -->
             <p class="badge link link-hover">Github</p>
+            <!-- ? Social Network -->
 
-            <!-- ?SVG and Link container -->
+
           </div>
           <!-- ?SVG and Link container -->
+
         </div>
+        <!-- ?Container Social Networks-->
+
       </div>
+      <!-- ?Container Personal Data-->
 
       <!-- ?Buttons Container -->
       <div class="mt-1 p-4 flex flex-col content-center flex-wrap mx-6 center gap-3 border-t border-base-content sm:flex-row sm:px-0 sm:mt-3">
-        <!-- ?Buttons Container -->
 
-        <!-- ?MODAL -->
+        <!-- ?Modal datos -->
         <label for="datos" class="btn btn-primary btn-xs modal-button">datos</label>
         <input type="checkbox" id="datos" class="modal-toggle" />
         <div class="modal">
           <div class="modal-box">
-            <!-- ?Input -->
+
+            <!-- ?Input Nombre y apellido -->
             <div class="form-control">
               <label class="label">
                 <span class="label-text">Nombre y Apellido</span>
               </label>
               <input type="text" id="newname" placeholder="Nombre y Apellido" class="input input-sm input-bordered" />
             </div>
-            <!-- ?Input -->
-            <!-- ?Input -->
+            <!-- ?Input Nombre y apellido -->
+
+            <!-- ?Input profesion -->
             <div class="form-control">
               <label class="label">
                 <span class="label-text">Profesion</span>
               </label>
               <input type="text" id="newprofesion" placeholder="Profesion" class="input input-sm input-bordered" />
             </div>
-            <!-- ?Input -->
-            <!-- ?Input -->
+            <!-- ?Input profesion -->
+
+            <!-- ?Input ubicacion -->
             <div class="form-control">
               <label class="label">
                 <span class="label-text">Ubicacion</span>
               </label>
               <input type="text" id="newubicacion" placeholder="Ubicacion" class="input input-sm input-bordered" />
             </div>
-            <!-- ?Input -->
+            <!-- ?Input ubicacion -->
 
             <div class="modal-action">
               <label for="datos" onclick="fu()" class="btn btn-primary">Accept</label>
               <label for="datos" class="btn">Close</label>
             </div>
           </div>
-          <!-- ?MODAL -->
+
         </div>
+        <!-- ?Modal datos -->
+
         <button class="btn btn-primary btn-xs">Foto</button>
+
       </div>
-      <!-- !Buttons -->
+      <!-- ?Buttons Container -->
     </div>
-    <!-- ?Card top -->
+    <!-- ?Card container -->
 
-    <!-- 
+    <!--**  -------------------------    ABOUT  -----------------------------------   **-->
 
-        ----------------------------------    ABOUT  ----------------------------------------------
-
-   -->
-
-    <!-- ?About -->
-
+    <!-- ?Container About -->
     <div class="bg-base-100 mt-4 px-6 py-4 w-11/12 justify-center items-center overflow-hidden rounded-lg shadow-lg mx-auto">
+
       <!-- ?DROPDOWN ABOUT ME -->
       <div class="relative">
         <div class="dropdown dropdown-end absolute -right-5 top-0">
@@ -164,7 +161,7 @@
         </div>
         <!-- ?DROPDOWN ABOUT ME -->
 
-        <!-- MODAL ABOUT ME -->
+        <!-- ?MODAL ABOUT ME -->
         <input type="checkbox" id="aboutme" class="modal-toggle" />
         <div class="modal">
           <div class="modal-box">
@@ -180,27 +177,26 @@
             </div>
           </div>
         </div>
-        <!-- MODAL ABOUT ME -->
+        <!-- ?MODAL ABOUT ME -->
 
         <!-- ?TITLE ABOUT ME -->
         <h2 class="text-lg tracking-widest text-center text-primary font-extrabold mb-1 sm:text-left">About Me</h2>
         <!-- ?TITLE ABOUT ME -->
+
         <!-- ?PARRAFO ABOUT ME -->
         <p class="text-sm text-center text-neutral-content sm:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nulla officia voluptate, nisi repellat cumque obcaecati. Facilis temporibus nobis voluptatibus cum voluptatem fugiat harum iste ut a pariatur! Iste, adipisci! Incidunt sint qui animi praesentium suscipit ducimus quae quam veritatis illo? Vitae magnam vero ad autem amet ab molestiae maiores omnis, earum temporibus nostrum dolores distinctio consequatur, sunt expedita eos.</p>
         <!-- ?PARRAFO ABOUT ME -->
       </div>
     </div>
+    <!-- ?Container About -->
 
-    <!-- ?about -->
+    <!--**        -------------    EXPERIENCIA Y EDUCACION   ------------------------------**  -->
 
-    <!-- 
-
-        -------------------------    EXPERIENCIA Y EDUCACION   -------------------------------------------
-
-  -->
-
-    <!-- !CONTAINER CARD EXPERIENCIA Y EDUCACION -->
+    <!-- ?CONTAINER CARD EXPERIENCIA Y EDUCACION -->
     <div class="bg-base-100 mt-4 mb-3 px-6 py-4 w-11/12 justify-center items-center overflow-hidden rounded-lg shadow-lg mx-auto">
+
+      <!--**   ----------------------   Seccion experiencia   ------------------------------   -->
+
       <!-- ?DROPDOWN ANADIR EXPERIENCIA -->
       <div class="relative">
         <div class="dropdown dropdown-end absolute -right-5 top-0">
@@ -217,7 +213,7 @@
         </div>
         <!-- ?DROPDOWN ANADIR EXPERIENCIA -->
 
-        <!-- MODAL ANADIR EXPERIENCIA -->
+        <!-- ?MODAL ANADIR EXPERIENCIA -->
         <input type="checkbox" id="anadir-experiencia" class="modal-toggle" />
         <div class="modal">
           <div class="modal-box">
@@ -228,16 +224,18 @@
             </div>
           </div>
         </div>
-        <!-- MODAL ANADIR EXPERIENCIA -->
+        <!-- ?MODAL ANADIR EXPERIENCIA -->
 
         <!-- ?TITLE EXPIRIENCE -->
         <h2 class="text-lg tracking-widest text-center text-primary font-extrabold mb-1 sm:text-left">Experiencia</h2>
         <!-- ?TITLE EXPIRIENCE -->
+
       </div>
       <!-- ?DROPDOWN ANADIR EXPERIENCIA -->
 
-      <!-- !CARD EXPERIENCIA -->
+      <!-- ?CARD EXPERIENCIA -->
       <div class="flex flex-col place-items-center | py-4 | relative | sm:flex-row">
+
         <!-- ?DROPDOWN CARD -->
         <div class="dropdown dropdown-end absolute top-2 right-0">
           <div tabindex="0" class="m-1 btn btn-xs">
@@ -256,7 +254,7 @@
         </div>
         <!-- ?DROPDOWN CARD -->
 
-        <!-- MODAL EDITAR CARD -->
+        <!-- ?MODAL EDITAR CARD -->
         <input type="checkbox" id="editarcard" class="modal-toggle" />
         <div class="modal">
           <div class="modal-box">
@@ -290,21 +288,23 @@
             </div>
           </div>
         </div>
-        <!-- MODAL EDITAR CARD -->
-        <img class="h-12 w-12 mb-3 | sm:float-left sm:h-24 sm:w-24 sm:mr-6 sm:mb-0" src="" />
+        <!-- ?MODAL EDITAR CARD -->
+
+        <!-- ?Card Data -->
+        <img class="h-12 w-12 mb-3 | sm:float-left sm:h-24 sm:w-24 sm:mr-6 sm:mb-0" src="http://placeimg.com/200/200/tech" />
         <div class="">
           <h3 class="text-sm font-semibold text-secondary mb-3 | sm:text-left sm:text-xl">FrontEnd Developer</h3>
           <h4 class="text-xs text-neutral-content mb-3 text-center | sm:text-left sm:text-base">Airbnb - Jornada Parcial</h4>
           <h5 class="text-xs text-neutral-content text-center | sm:text-left sm:text-base">2019 - Actualidad</h5>
         </div>
+        <!-- ?Card Data -->
+
       </div>
-      <!-- !CARD EXPERIENCIA -->
-      <!-- 
+      <!-- ?CARD EXPERIENCIA -->
 
-        ------------------------------------------------------------------------------------------------------
+      <!--**   ----------------------   Seccion Educacion   -------------------------------------   -->
 
-     -->
-      <!-- ?TITULO ANADIR EDUCACION -->
+      <!-- ?DROPDOWN ANADIR EDUCACION -->
       <div class="relative border-t-2 mt-3 border-neutral-content">
         <div class="dropdown dropdown-end absolute -right-5 top-3">
           <div tabindex="0" class="m-1 btn btn-xs">
@@ -320,7 +320,7 @@
         </div>
         <!-- ?DROPDOWN ANADIR EDUCACION -->
 
-        <!-- MODAL ANADIR EDUCACION -->
+        <!-- ?MODAL ANADIR EDUCACION -->
         <input type="checkbox" id="anadir-educacion" class="modal-toggle" />
         <div class="modal">
           <div class="modal-box">
@@ -331,15 +331,18 @@
             </div>
           </div>
         </div>
-        <!-- MODAL ANADIR EDUCACION -->
+        <!-- ?MODAL ANADIR EDUCACION -->
 
         <!-- ?TITLE EDUCACION -->
         <h2 class="text-lg tracking-widest text-center text-primary font-extrabold mb-1 mt-3 sm:text-left">Educacion</h2>
         <!-- ?TITLE EDUCACION -->
+
       </div>
-      <!-- ?TITULO ANADIR EDUCACION -->
-      <!-- !CARD EDUCACION -->
+      <!-- ?DROPDOWN ANADIR EDUCACION -->
+
+      <!-- ?CARD EDUCACION -->
       <div class="flex flex-col place-items-center | py-4 | relative | sm:flex-row">
+
         <!-- ?DROPDOWN CARD -->
         <div class="dropdown dropdown-end absolute top-2 right-0">
           <div tabindex="0" class="m-1 btn btn-xs">
@@ -358,7 +361,7 @@
         </div>
         <!-- ?DROPDOWN CARD -->
 
-        <!-- MODAL EDITAR CARD -->
+        <!-- ?MODAL EDITAR CARD -->
         <input type="checkbox" id="educacion1" class="modal-toggle" />
         <div class="modal">
           <div class="modal-box">
@@ -392,17 +395,23 @@
             </div>
           </div>
         </div>
-        <!-- MODAL EDITAR CARD -->
-        <img class="h-12 w-12 mb-3 | sm:float-left sm:h-24 sm:w-24 sm:mr-6 sm:mb-0" src="" />
+        <!-- ?MODAL EDITAR CARD -->
+
+        <!-- ?Card Data -->
+        <img class="h-12 w-12 mb-3 | sm:float-left sm:h-24 sm:w-24 sm:mr-6 sm:mb-0" src="http://placeimg.com/200/200/tech" />
         <div class="">
           <h3 class="text-sm font-semibold text-secondary mb-3 | sm:text-left sm:text-xl">FrontEnd Developer</h3>
           <h4 class="text-xs text-neutral-content mb-3 text-center | sm:text-left sm:text-base">Argentina Programa - INTI</h4>
           <h5 class="text-xs text-neutral-content text-center | sm:text-left sm:text-base">2021</h5>
         </div>
+        <!-- ?Card Data -->
+
       </div>
-      <!-- !CARD EDUCACION -->
-      <!-- !CARD EDUCACION -->
+      <!-- ?CARD EDUCACION -->
+
+      <!-- ?CARD EDUCACION -->
       <div class="flex flex-col place-items-center | py-4 | relative | sm:flex-row">
+
         <!-- ?DROPDOWN CARD -->
         <div class="dropdown dropdown-end absolute top-2 right-0">
           <div tabindex="0" class="m-1 btn btn-xs">
@@ -421,7 +430,7 @@
         </div>
         <!-- ?DROPDOWN CARD -->
 
-        <!-- MODAL EDITAR CARD -->
+        <!-- ?MODAL EDITAR CARD -->
         <input type="checkbox" id="educacion2" class="modal-toggle" />
         <div class="modal">
           <div class="modal-box">
@@ -455,27 +464,27 @@
             </div>
           </div>
         </div>
-        <!-- MODAL EDITAR CARD -->
-        <img class="h-12 w-12 mb-3 | sm:float-left sm:h-24 sm:w-24 sm:mr-6 sm:mb-0" src="" />
+        <!-- ?MODAL EDITAR CARD -->
+
+        <!-- ?Data Card -->
+        <img class="h-12 w-12 mb-3 | sm:float-left sm:h-24 sm:w-24 sm:mr-6 sm:mb-0" src="http://placeimg.com/200/200/tech" />
         <div class="">
           <h3 class="text-sm font-semibold text-secondary mb-3 | sm:text-left sm:text-xl">BackEnd Developer</h3>
           <h4 class="text-xs text-neutral-content mb-3 text-center | sm:text-left sm:text-base">Argentina Programa - INTI</h4>
           <h5 class="text-xs text-neutral-content text-center | sm:text-left sm:text-base">2021</h5>
         </div>
+        <!-- ?Data Card -->
+
       </div>
-      <!-- !CARD EDUCACION -->
+      <!-- ?CARD EDUCACION -->
     </div>
-    <!-- !CONTAINER CARD EXPERIENCIA Y EDUCACION -->
+    <!-- ?CONTAINER CARD EXPERIENCIA Y EDUCACION -->
 
-    <!-- 
-
-        -------------------------    LENGUAJES   -------------------------------------------
-
-   -->
+    <!--**     -------------------------    LENGUAJES   ---------------------------------------**  -->
 
     <!-- ?LENGUAJES -->
-
     <div class="bg-base-100 p-6 w-11/12 overflow-hidden rounded-lg shadow-lg mx-auto">
+
       <!-- ?DROPDOWN LENGUAJES -->
       <div class="relative">
         <div class="dropdown dropdown-end absolute -right-5 top-0">
@@ -492,7 +501,7 @@
         </div>
         <!-- ?DROPDOWN LENGUAJES -->
 
-        <!-- MODAL LENGUAJES -->
+        <!-- ?MODAL LENGUAJES -->
         <input type="checkbox" id="lenguajes" class="modal-toggle" />
         <div class="modal">
           <div class="modal-box">
@@ -503,70 +512,72 @@
             </div>
           </div>
         </div>
-        <!-- MODAL LENGUAJES -->
+        <!-- ?MODAL LENGUAJES -->
 
         <!-- ?TITLE LENGUAJES -->
         <h2 class="text-lg tracking-widest text-center text-primary font-extrabold mb-4 sm:text-left">Lenguajes</h2>
         <!-- ?TITLE LENGUAJES -->
-      </div>
 
-      <!-- !Container Badges -->
+      </div>
+      <!-- ?DROPDOWN LENGUAJES -->
+
+      <!-- ?Container Badges -->
       <div class="">
-        <!-- !component -->
+
+        <!-- ?component -->
         <div class="flex flex-col justify-center">
           <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 px-4">
-            <!-- !SMALL CARD ROUNDED -->
+
+            <!-- ?SMALL CARD ROUNDED -->
             <div class="bg-base-200 shadow-2xl | p-4 rounded-3xl | flex justify-around">
               <img class="w-16 h-16 object-cover rounded-full" src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png" alt="" />
               <div class="flex flex-col justify-center">
                 <p class="text-neutral-content font-semibold">HTML</p>
               </div>
             </div>
-            <!-- !END SMALL CARD ROUNDED -->
+            <!-- ?END SMALL CARD ROUNDED -->
 
-            <!-- !SMALL CARD ROUNDED -->
+            <!-- ?SMALL CARD ROUNDED -->
             <div class="bg-base-200 shadow-2xl | p-4 rounded-3xl | flex justify-around">
               <img class="w-16 h-16 object-cover rounded-full" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" alt="" />
               <div class="flex flex-col justify-center">
                 <p class="text-neutral-content font-semibold">CSS</p>
               </div>
             </div>
-            <!-- !END SMALL CARD ROUNDED -->
+            <!-- ?END SMALL CARD ROUNDED -->
 
-            <!-- !SMALL CARD ROUNDED -->
+            <!-- ?SMALL CARD ROUNDED -->
             <div class="bg-base-200 shadow-2xl | p-4 rounded-3xl | flex justify-around">
               <img class="w-16 h-16 object-cover rounded-full" src="https://mercedesdavila.github.io/img/js.png" alt="" />
               <div class="flex flex-col justify-center">
                 <p class="text-neutral-content font-semibold">JavaScript</p>
               </div>
             </div>
-            <!-- !END SMALL CARD ROUNDED -->
+            <!-- ?END SMALL CARD ROUNDED -->
 
-            <!-- !SMALL CARD ROUNDED -->
+            <!-- ?SMALL CARD ROUNDED -->
             <div class="bg-base-200 shadow-2xl | p-4 rounded-3xl | flex justify-around">
               <img class="w-16 h-16 object-cover rounded-full" src="https://img1.freepng.es/20180824/gwx/kisspng-computer-icons-pro-git-portable-network-graphics-i-git-book-pro-git-app-app-5b80546bc0a4c5.2332101615351368757891.jpg" alt="" />
               <div class="flex flex-col justify-center">
                 <p class="text-neutral-content font-semibold">Git</p>
               </div>
             </div>
-            <!-- !END SMALL CARD ROUNDED -->
+            <!-- ?END SMALL CARD ROUNDED -->
           </div>
         </div>
-      </div>
-      <!-- !Container Badges -->
-    </div>
+        <!-- ?component -->
 
+      </div>
+      <!-- ?Container Badges -->
+
+    </div>
     <!-- ?LENGUAJES -->
 
-    <!-- 
+    <!--** ---------------------------    PROYECTOS   -----------------------------------** -->
 
-        -------------------------    PROYECTOS   -------------------------------------------
-
-   -->
-
-    <!-- !PROYECTOS -->
-
+    <!-- ?CONTAINER PROYECTOS -->
     <div class="bg-base-100 m-5 p-5 w-11/12 justify-center items-center overflow-hidden rounded-lg shadow-lg mx-auto">
+
       <!-- ?DROPDOWN PROYECTOS -->
       <div class="relative">
         <div class="dropdown dropdown-end absolute -right-5 top-0">
@@ -583,7 +594,7 @@
         </div>
         <!-- ?DROPDOWN PROYECTOS -->
 
-        <!-- MODAL PROYECTOS -->
+        <!-- ?MODAL PROYECTOS -->
         <input type="checkbox" id="proyectos" class="modal-toggle" />
         <div class="modal">
           <div class="modal-box">
@@ -594,13 +605,13 @@
             </div>
           </div>
         </div>
-        <!-- MODAL PROYECTOS -->
+        <!-- ?MODAL PROYECTOS -->
 
         <!-- ?TITLE PROYECTOS -->
         <h2 class="text-lg tracking-widest text-center text-primary font-extrabold mb-4 sm:text-left">Proyectos</h2>
         <!-- ?TITLE PROYECTOS -->
 
-        <!-- CARD PROYECTO 1 -->
+        <!-- ?CARD PROYECTO 1 -->
         <div class="relative mb-4">
           <div class="dropdown dropdown-end absolute -right-1 top-0">
             <div tabindex="0" class="m-1 btn btn-xs">
@@ -618,7 +629,7 @@
               <li></li>
             </ul>
           </div>
-          <!-- MODAL PROYECTO1 -->
+          <!-- ?MODAL PROYECTO1 -->
           <input type="checkbox" id="proyecto1" class="modal-toggle" />
           <div class="modal">
             <div class="modal-box">
@@ -641,13 +652,14 @@
               </div>
             </div>
           </div>
-          <!-- MODAL PROYECTO1 -->
+          <!-- ?MODAL PROYECTO1 -->
+
           <h3 class="text-base tracking-widest text-secondary text-left font-semibold ml-6 | sm:text-2xl">e-Farmacia</h3>
           <p class="ml-6 text-sm text-neutral-content | sm:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates neque dolores a consequatur consequuntur doloremque debitis iure quis, in cumque nisi, accusantium iste, deserunt autem dicta vel quod magni.</p>
         </div>
-        <!-- CARD PROYECTO 1 -->
+        <!-- ?CARD PROYECTO 1 -->
 
-        <!-- CARD PROYECTO 2 -->
+        <!-- ?CARD PROYECTO 2 -->
         <div class="relative mb-4">
           <div class="dropdown dropdown-end absolute -right-1 top-0">
             <div tabindex="0" class="m-1 btn btn-xs">
@@ -665,7 +677,7 @@
               <li></li>
             </ul>
           </div>
-          <!-- MODAL PROYECTO2 -->
+          <!-- ?MODAL PROYECTO2 -->
           <input type="checkbox" id="proyecto2" class="modal-toggle" />
           <div class="modal">
             <div class="modal-box">
@@ -688,13 +700,13 @@
               </div>
             </div>
           </div>
-          <!-- MODAL PROYECTO2 -->
+          <!-- ?MODAL PROYECTO2 -->
           <h3 class="text-base tracking-widest text-secondary text-left font-semibold ml-6 | sm:text-2xl">Portfolio Personal</h3>
           <p class="ml-6 text-sm text-neutral-content | sm:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolor, placeat deserunt dignissimos quasi velit repellendus facere ea, impedit ex quam nobis ducimus delectus aliquam quos corrupti rerum quia recusandae!Cum id cupiditate facilis esse perspiciatis magnam qui nostrum eius accusamus consequatur natus ea saepe porro, ipsa corrupti consequuntur earum modi voluptatem vero unde recusandae hic. Culpa, iusto. Illum, veniam?</p>
         </div>
-        <!-- CARD PROYECTO 2 -->
+        <!-- ?CARD PROYECTO 2 -->
 
-        <!-- !Proyects -->
+        <!-- ?Proyects -->
       </div>
     </div>
   </div>
